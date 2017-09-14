@@ -1,0 +1,96 @@
+- alias: 'TermostatoCool ON'
+  initial_state: 'off'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.termostatoprincipalz_temperature
+    above: 30
+    below: 40
+  action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+      operation_mode: 'Cool'
+      temperature: 28
+  - delay: 0:00:15
+  - service: fan.set_speed
+    entity_id: fan.abanicorecprincipal_level
+    data:
+      speed: 'low'
+  - delay: 0:00:10
+  - service: zwave.refresh_entity
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+
+- alias: 'TermostatoCool OFF'
+  initial_state: 'off'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.termostatoprincipalz_temperature
+    below: 30
+    above: 28
+  action:
+  - service: climate.set_operation_mode
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+      operation_mode: 'Off'
+  - delay: 0:00:15
+  - service: fan.set_speed
+    entity_id: fan.abanicorecprincipal_level
+    data:
+      speed: 'medium'
+  - delay: 0:00:10
+  - service: zwave.refresh_entity
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+
+- alias: 'TermostatoHeat ON'
+  initial_state: 'off'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.termostatoprincipalz_temperature
+    below: 28
+    above: 18
+  action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.termostatoprincipalz_heating_1
+      operation_mode: 'Heat'
+      temperature: 28
+  - delay: 0:00:10
+  - service: zwave.refresh_entity
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+  - delay: 0:00:10
+  - service: fan.set_speed
+    entity_id: fan.abanicorecprincipal_level
+    data:
+      speed: 'low'
+  - delay: 0:00:20
+  - service: fan.set_speed
+    entity_id: fan.abanicorecprincipal_level
+    data:
+      speed: 'high'
+  - service: zwave.refresh_entity
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1
+
+- alias: 'TermostatoHeat OFF'
+  initial_state: 'off'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.termostatoprincipalz_temperature
+    above: 28
+    below: 30
+  action:
+  - service: climate.set_operation_mode
+    data:
+      entity_id: climate.termostatoprincipalz_heating_1
+      operation_mode: 'Off'
+  - delay: 0:00:15
+  - service: fan.set_speed
+    entity_id: fan.abanicorecprincipal_level
+    data:
+      speed: 'off'
+  - service: zwave.refresh_entity
+    data:
+      entity_id: climate.termostatoprincipalz_cooling_1

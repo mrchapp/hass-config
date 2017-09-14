@@ -1,0 +1,14 @@
+- alias: 'Campanadas 9 pm'
+  trigger:
+    platform: time
+    at: '21:00'
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.60
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/GrandFatherChime09.wav
+      media_content_type: audio/mp3

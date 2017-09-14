@@ -1,0 +1,29 @@
+## Termostato principal
+sensor.termostatoprincipalz_air_flow:
+  hidden: true
+sensor.termostatoprincipalz_atmospheric_pressure:
+  hidden: true
+sensor.termostatoprincipalz_current:
+  hidden: true
+sensor.termostatoprincipalz_distance:
+  hidden: true
+sensor.termostatoprincipalz_general:
+  hidden: true
+sensor.termostatoprincipalz_power:
+  hidden: true
+sensor.termostatoprincipalz_rain_rate:
+  hidden: true
+sensor.termostatoprincipalz_rotation:
+  hidden: true
+sensor.termostatoprincipalz_soil_temperature:
+  hidden: true
+sensor.termostatoprincipalz_solar_radiation:
+  hidden: true
+sensor.termostatoprincipalz_velocity:
+  hidden: true
+sensor.termostatoprincipalz_weight:
+  hidden: true
+sensor.termostatoprincipalz_heating_1:
+  hidden: true
+sensor.termostatoprincipalz_luminance:
+  hidden: true

@@ -1,0 +1,103 @@
+- alias: 'Aviso: Salir (mediodía, lun-jue)'
+  trigger:
+    platform: time
+    at: '12:30'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.80
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_type: audio/mp3
+
+- alias: 'Aviso: Salir (mediodía, vie)'
+  trigger:
+    platform: time
+    at: '12:00'
+  condition:
+    condition: time
+    weekday:
+      - fri
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.80
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_type: audio/mp3
+
+- alias: 'Aviso: Salir (mañana)'
+  trigger:
+    platform: time
+    at: '07:42'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - wed
+      - thu
+      - fri
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.80
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_type: audio/mp3
+
+- alias: 'Aviso: Salir (tarde, lun, mié, jue)'
+  trigger:
+    platform: time
+    at: '17:30'
+  condition:
+    condition: time
+    weekday:
+      - mon
+      - wed
+      - thu
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.80
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_type: audio/mp3
+
+- alias: 'Aviso: Salir (tarde, mar)'
+  trigger:
+    platform: time
+    at: '15:10'
+  condition:
+    condition: time
+    weekday:
+      - tue
+  action:
+  - service: media_player.volume_set
+    entity_id: media_player.casa
+    data:
+      volume_level: 0.80
+  - service: media_player.play_media
+    entity_id: media_player.casa
+    data:
+      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_type: audio/mp3

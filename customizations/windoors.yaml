@@ -1,0 +1,61 @@
+## Door/window sensors
+
+# Puerta lavandería
+sensor.puertalavanderia_alarm_level:
+  hidden: true
+sensor.puertalavanderia_alarm_type:
+  hidden: true
+sensor.puertalavanderia_burglar:
+  hidden: true
+sensor.puertalavanderia_sourcenodeid:
+  hidden: true
+binary_sensor.puertalavanderia_sensor:
+  hidden: true
+
+# Puerta patio izquierda
+sensor.puertapatioizq_alarm_level:
+  hidden: true
+sensor.puertapatioizq_alarm_type:
+  hidden: true
+sensor.puertapatioizq_burglar:
+  hidden: true
+sensor.puertapatioizq_sourcenodeid:
+  hidden: true
+binary_sensor.puertapatioizq_sensor:
+  hidden: true
+
+# Puerta patio derecha
+sensor.puertapatioder_alarm_level:
+  hidden: true
+sensor.puertapatioder_alarm_type:
+  hidden: true
+sensor.puertapatioder_burglar:
+  hidden: true
+sensor.puertapatioder_sourcenodeid:
+  hidden: true
+binary_sensor.puertapatioder_sensor:
+  hidden: true
+
+# Ventana cocina
+sensor.ventanacocina_alarm_level:
+  hidden: true
+sensor.ventanacocina_alarm_type:
+  hidden: true
+sensor.ventanacocina_burglar:
+  hidden: true
+sensor.ventanacocina_sourcenodeid:
+  hidden: true
+binary_sensor.ventanacocina_sensor:
+  hidden: true
+
+# Ventana estancia
+sensor.ventanaestancia_alarm_level:
+  hidden: true
+sensor.ventanaestancia_alarm_type:
+  hidden: true
+sensor.ventanaestancia_burglar:
+  hidden: true
+sensor.ventanaestancia_sourcenodeid:
+  hidden: true
+binary_sensor.ventanaestancia_sensor:
+  hidden: true

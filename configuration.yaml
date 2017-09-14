@@ -1,0 +1,66 @@
+homeassistant:
+  name: Home
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: 596
+  unit_system: metric
+  time_zone: America/Monterrey
+  #customize_domain:
+  #  zwave:
+  #    hidden: true
+  customize: !include_dir_merge_named customizations
+
+frontend:
+
+config:
+
+http:
+  api_password: !secret api_password
+  # base_url: example.duckdns.org:8123
+
+updater:
+  include_used_components: true
+
+discovery:
+
+conversation:
+
+shopping_list:
+
+history:
+
+logbook:
+  exclude:
+    entities:
+      - automation.zwave_refresh
+
+sun:
+
+binary_sensor:
+  - platform: bloomsky
+    monitored_conditions:
+      - Night
+      - Rain
+
+# Text to speech
+tts:
+  - platform: google
+    language: 'es'
+
+zwave:
+  usb_path: /dev/ttyACM0
+
+light:
+  - platform: lifx
+
+bloomsky:
+  api_key: !secret bloomsky_api_key
+
+media_player:
+  - platform: cast
+
+group: !include groups.yaml
+script: !include scripts.yaml
+automation: !include_dir_merge_list automations
+notify: !include_dir_merge_list notifications
+sensor: !include_dir_merge_list sensors

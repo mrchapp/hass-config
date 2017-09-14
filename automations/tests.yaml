@@ -1,0 +1,31 @@
+- alias: 'Test email'
+  trigger:
+#    platform: state
+#    entity_id: sensor.template_windoor_cocina
+#    from: 'Closed'
+#    to: 'Open'
+    platform: time
+    at: '11:54'
+  condition:
+    condition: time
+    weekday:
+      - fri
+  action:
+  - service: notify.mail_mrchapp
+    data:
+        title: 'Intruder alert'
+        message: 'Testing email notification.'
+  - service: notify.xmpp_mrchapp
+    data:
+        message: 'Testing XMPP notification.'
+
+- alias: 'Test video'
+  trigger:
+    platform: time
+    at: '11:19'
+  action:
+    service: media_player.play_media
+    entity_id: media_player.atomo
+    data:
+      media_content_id: http://192.168.17.36/d/aventuras2.mp4
+      media_content_type: video/mp4

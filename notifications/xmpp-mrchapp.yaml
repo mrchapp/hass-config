@@ -1,0 +1,5 @@
+- name: xmpp_mrchapp
+  platform: xmpp
+  sender: !secret xmpp_jid
+  password: !secret xmpp_password
+  recipient: !secret xmpp_recipient

@@ -1,0 +1,13 @@
+## Friendly names
+switch.Escaleras:
+  friendly_name: Escaleras
+light.Cochera:
+  friendly_name: Cochera
+climate.termostatoprincipalz_cooling_1:
+  friendly_name: Termostato Principal
+group.planta_baja:
+  friendly_name: Planta Baja
+group.cocina:
+  friendly_name: Cocina
+group.salacomedor:
+  friendly_name: Sala/Comedor

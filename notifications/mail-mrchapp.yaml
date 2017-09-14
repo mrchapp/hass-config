@@ -1,0 +1,10 @@
+- name: mail_mrchapp
+  platform: smtp
+  recipient: !secret mail_recipient
+  server: !secret mail_server
+  port: !secret mail_port
+  sender: !secret mail_sender
+  username: !secret mail_username
+  password: !secret mail_password
+  encryption: starttls
+  sender_name: 'Home Assistant'

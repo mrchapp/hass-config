@@ -1,0 +1,9 @@
+## Miscellaneous
+switch.pivot_power_genius:
+  hidden: true
+light.interior:
+  hidden: true
+light.exterior:
+  hidden: true
+binary_sensor.hub:
+  hidden: true

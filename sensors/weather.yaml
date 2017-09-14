@@ -1,0 +1,7 @@
+- platform: yr
+- platform: bloomsky
+  monitored_conditions:
+    - Temperature
+    - Humidity
+    - Pressure
+    - Voltage

@@ -1,0 +1,50 @@
+planta_baja:
+  view: yes
+  entities:
+    - light.cocina
+    - light.licocina
+    - light.comedor
+    - light.salaspot
+    - light.recibidor
+    - light.cochera_level
+    - light.patiod
+    - light.pasillo
+    - fan.abanicosalaz_level
+    - switch.sala
+    - switch.escaleras
+    - sensor.template_windoor_patioizq
+    - sensor.template_windoor_patioder
+    - sensor.template_windoor_cocina
+    - sensor.template_windoor_lavanderia
+    - media_player.abajo
+
+cocina:
+  view: yes
+  entities:
+    - light.cocina
+    - light.licocina
+    - light.comedor
+    - light.salaspot
+    - light.recibidor
+    - fan.abanicosalaz_level
+    - switch.sala
+    - sensor.template_windoor_cocina
+    - sensor.template_windoor_patioizq
+    - sensor.template_windoor_patioder
+    - media_player.abajo
+
+salacomedor:
+  entities:
+    - light.comedor
+    - light.salaspot
+    - fan.abanicosalaz_level
+    - switch.sala
+
+recamara_principal:
+  view: yes
+  entities:
+    - fan.abanicorecprincipal_level
+    - light.liestudio
+    - light.lisala
+    - sensor.termostatoprincipalz_temperature
+    - climate.termostatoprincipalz_cooling_1

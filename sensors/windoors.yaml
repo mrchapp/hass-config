@@ -1,0 +1,70 @@
+- platform: template
+  sensors:
+    template_windoor_lavanderia:
+        value_template: >-
+          {%- if is_state("sensor.puertalavanderia_alarm_level", "255") -%}
+            {%- if is_state("sensor.puertalavanderia_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Puerta Lavandería'
+- platform: template
+  sensors:
+    template_windoor_patioizq:
+        value_template: >-
+          {%- if is_state("sensor.puertapatioizq_alarm_level", "255") -%}
+            {%- if is_state("sensor.puertapatioizq_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Puerta Patio Izquierda'
+- platform: template
+  sensors:
+    template_windoor_patioder:
+        value_template: >-
+          {%- if is_state("sensor.puertapatioder_alarm_level", "255") -%}
+            {%- if is_state("sensor.puertapatioder_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Puerta Patio Derecha'
+- platform: template
+  sensors:
+    template_windoor_cocina:
+        value_template: >-
+          {%- if is_state("sensor.ventanacocina_alarm_level", "255") -%}
+            {%- if is_state("sensor.ventanacocina_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Ventana Cocina'
+- platform: template
+  sensors:
+    template_windoor_estancia:
+        value_template: >-
+          {%- if is_state("sensor.ventanaestancia_alarm_level", "255") -%}
+            {%- if is_state("sensor.ventanaestancia_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Ventana Estancia'

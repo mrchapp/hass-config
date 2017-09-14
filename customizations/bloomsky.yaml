@@ -1,0 +1,7 @@
+## BloomSky
+sensor.paseo_del_vergel_luminance:
+  hidden: true
+sensor.paseo_del_vergel_uvindex:
+  hidden: true
+sensor.paseo_del_vergel_voltage:
+  hidden: true

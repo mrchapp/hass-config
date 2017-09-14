@@ -1,0 +1,19 @@
+- alias: 'Cochera ON'
+  trigger:
+    platform: time
+    at: '19:35'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.cochera_level
+    data:
+      brightness: 128
+
+- alias: 'Cochera OFF'
+  trigger:
+    platform: time
+    at: '07:20'
+  action:
+    service: light.turn_off
+    entity_id:
+      - light.cochera_level
