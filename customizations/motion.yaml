@@ -1,0 +1,13 @@
+## Motion sensors
+
+# MoviTres
+sensor.movitres_alarm_level:
+  hidden: true
+sensor.movitres_alarm_type:
+  hidden: true
+sensor.movitres_burglar:
+  hidden: true
+sensor.movitres_sourcenodeid:
+  hidden: true
+binary_sensor.movitres_sensor:
+  hidden: true
