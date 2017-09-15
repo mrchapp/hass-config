@@ -1,0 +1,14 @@
+- platform: template
+  sensors:
+    template_motion_movitres:
+        value_template: >-
+          {%- if is_state("sensor.movitres_alarm_level", "255") -%}
+            {%- if is_state("sensor.movitres_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Triggered
+            {%- endif %}
+          {%- else -%}
+            Clear
+          {%- endif %}
+        friendly_name: 'Movimiento Tres'
