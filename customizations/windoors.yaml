@@ -12,6 +12,24 @@ sensor.puertalavanderia_sourcenodeid:
 binary_sensor.puertalavanderia_sensor:
   hidden: true
 
+# Puerta balcón
+sensor.puertabalcon_alarm_level:
+  hidden: true
+sensor.puertabalcon_alarm_type:
+  hidden: true
+sensor.puertabalcon_appliance:
+  hidden: true
+sensor.puertabalcon_burglar:
+  hidden: true
+sensor.puertabalcon_emergency:
+  hidden: true
+sensor.puertabalcon_power_management:
+  hidden: true
+sensor.puertabalcon_sourcenodeid:
+  hidden: true
+binary_sensor.puertabalcon_sensor:
+  hidden: true
+
 # Puerta patio izquierda
 sensor.puertapatioizq_alarm_level:
   hidden: true
