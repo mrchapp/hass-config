@@ -27,3 +27,5 @@ sensor.termostatoprincipalz_heating_1:
   hidden: true
 sensor.termostatoprincipalz_luminance:
   hidden: true
+climate.termostatoprincipalz_heating_1:
+  hidden: true
