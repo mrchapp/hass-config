@@ -5,9 +5,15 @@ light.Cochera:
   friendly_name: Cochera
 climate.termostatoprincipalz_cooling_1:
   friendly_name: Termostato Principal
+group.clima:
+  friendly_name: Clima
+group.cocinasalacomedor:
+  friendly_name: Cocina/Sala/Comedor
 group.planta_baja:
   friendly_name: Planta Baja
-group.cocina:
-  friendly_name: Cocina
-group.salacomedor:
-  friendly_name: Sala/Comedor
+group.recamara_derecha:
+  friendly_name: Recámara Derecha
+group.recamara_principal:
+  friendly_name: Recámara Principal
+group.recamara_principal_noview:
+  friendly_name: Recámara Principal
