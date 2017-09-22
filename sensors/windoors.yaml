@@ -14,6 +14,20 @@
         friendly_name: 'Puerta Lavandería'
 - platform: template
   sensors:
+    template_windoor_balcon:
+        value_template: >-
+          {%- if is_state("sensor.puertabalcon_alarm_level", "255") -%}
+            {%- if is_state("sensor.puertabalcon_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Open
+            {%- endif %}
+          {%- else -%}
+            Closed
+          {%- endif %}
+        friendly_name: 'Puerta Balcón'
+- platform: template
+  sensors:
     template_windoor_patioizq:
         value_template: >-
           {%- if is_state("sensor.puertapatioizq_alarm_level", "255") -%}
