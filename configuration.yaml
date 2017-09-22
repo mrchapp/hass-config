@@ -60,7 +60,7 @@ media_player:
   - platform: cast
 
 group: !include groups.yaml
-script: !include scripts.yaml
 automation: !include_dir_merge_list automations
-notify: !include_dir_merge_list notifications
+script: !include scripts.yaml
 sensor: !include_dir_merge_list sensors
+notify: !include_dir_merge_list notifications
