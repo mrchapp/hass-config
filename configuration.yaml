@@ -71,3 +71,7 @@ automation: !include_dir_merge_list automations
 script: !include scripts.yaml
 sensor: !include_dir_merge_list sensors
 notify: !include_dir_merge_list notifications
+
+cuby:
+  username: !secret cuby_username
+  api_key: !secret cuby_api_key
