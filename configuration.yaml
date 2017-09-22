@@ -33,6 +33,13 @@ logbook:
   exclude:
     entities:
       - automation.zwave_refresh
+      - zwave.movitres
+      - zwave.puertabalcon
+      - zwave.puertalavanderia
+      - zwave.puertapatioder
+      - zwave.puertapatioizq
+      - zwave.ventanacocina
+      - zwave.ventanaestancia
 
 sun:
 
