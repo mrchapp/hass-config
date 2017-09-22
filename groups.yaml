@@ -18,33 +18,70 @@ planta_baja:
     - sensor.template_windoor_lavanderia
     - media_player.abajo
 
-cocina:
-  view: yes
-  entities:
-    - light.cocina
-    - light.licocina
-    - light.comedor
-    - light.salaspot
-    - light.recibidor
-    - fan.abanicosalaz_level
-    - switch.sala
-    - sensor.template_windoor_cocina
-    - sensor.template_windoor_patioizq
-    - sensor.template_windoor_patioder
-    - media_player.abajo
-
-salacomedor:
-  entities:
-    - light.comedor
-    - light.salaspot
-    - fan.abanicosalaz_level
-    - switch.sala
-
 recamara_principal:
   view: yes
   entities:
+    - automation.termostatocool_on
+    - automation.termostatocool_off
+    - automation.termostatoheat_on
+    - automation.termostatoheat_off
     - fan.abanicorecprincipal_level
     - light.liestudio
     - light.lisala
     - sensor.termostatoprincipalz_temperature
     - climate.termostatoprincipalz_cooling_1
+    - sensor.movidos_temperature
+    - sensor.template_windoor_balcon
+    - binary_sensor.movidos_motion
+    - media_player.atomo
+
+recamara_principal_noview:
+  view: no
+  entities:
+    - fan.abanicorecprincipal_level
+    - light.liestudio
+    - light.lisala
+    - climate.termostatoprincipalz_cooling_1
+    - sensor.termostatoprincipalz_temperature
+    - sensor.movidos_temperature
+    - sensor.template_windoor_balcon
+    - binary_sensor.movidos_motion
+    - automation.termostatocool_on
+    - automation.termostatocool_off
+    - automation.termostatoheat_on
+    - automation.termostatoheat_off
+    - media_player.atomo
+
+recamara_derecha:
+  entities:
+    - fan.abanicorecamarader_level
+    - light.focorecamarader_level
+    - light.lampararecder
+    - sensor.movitres_temperature
+    - sensor.template_motion_movitres
+
+cocinasalacomedor:
+  entities:
+    - fan.abanicosalaz_level
+    - light.cocina
+    - light.comedor
+    - light.licocina
+    - switch.sala
+    - light.salaspot
+    - sensor.template_windoor_cocina
+    - sensor.template_windoor_patioizq
+    - sensor.template_windoor_patioder
+    - sensor.moviuno_temperature
+    - binary_sensor.moviuno_motion
+    - media_player.abajo
+
+clima:
+  entities:
+    - sensor.cubydev_temperature
+    - sensor.cubydev_humidity
+    - sensor.moviuno_temperature
+    - sensor.movidos_temperature
+    - sensor.movitres_temperature
+    - sensor.termostatoprincipalz_temperature
+    - sensor.paseo_del_vergel_temperature
+    - sensor.paseo_del_vergel_humidity
