@@ -13,7 +13,7 @@
   - service: media_player.volume_set
     entity_id: media_player.casa
     data:
-      volume_level: 0.80
+      volume_level: 0.50
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
@@ -32,7 +32,7 @@
   - service: media_player.volume_set
     entity_id: media_player.casa
     data:
-      volume_level: 0.80
+      volume_level: 0.50
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
@@ -55,7 +55,7 @@
   - service: media_player.volume_set
     entity_id: media_player.casa
     data:
-      volume_level: 0.80
+      volume_level: 0.50
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
@@ -76,7 +76,7 @@
   - service: media_player.volume_set
     entity_id: media_player.casa
     data:
-      volume_level: 0.80
+      volume_level: 0.50
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
@@ -95,7 +95,7 @@
   - service: media_player.volume_set
     entity_id: media_player.casa
     data:
-      volume_level: 0.80
+      volume_level: 0.50
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
