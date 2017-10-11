@@ -60,7 +60,7 @@
   - service: zwave.refresh_entity
     data:
       entity_id: climate.termostatoprincipalz_cooling_1
-  - delay: 0:00:10
+  - delay: 0:01:00
   - service: fan.set_speed
     entity_id: fan.abanicorecprincipal_level
     data:
