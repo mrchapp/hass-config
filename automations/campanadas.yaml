@@ -10,5 +10,5 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/GrandFatherChime09.wav
+      media_content_id: !secret reloj_campanadas_09
       media_content_type: audio/mp3

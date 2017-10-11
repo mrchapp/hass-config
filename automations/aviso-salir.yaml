@@ -17,7 +17,7 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_id: !secret aviso_horadesalir
       media_content_type: audio/mp3
 
 - alias: 'Aviso: Salir (mediodía, vie)'
@@ -36,7 +36,7 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_id: !secret aviso_horadesalir
       media_content_type: audio/mp3
 
 - alias: 'Aviso: Salir (mañana)'
@@ -59,7 +59,7 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_id: !secret aviso_horadesalir
       media_content_type: audio/mp3
 
 - alias: 'Aviso: Salir (tarde, lun, mié, jue)'
@@ -80,7 +80,7 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_id: !secret aviso_horadesalir
       media_content_type: audio/mp3
 
 - alias: 'Aviso: Salir (tarde, mar)'
@@ -99,5 +99,5 @@
   - service: media_player.play_media
     entity_id: media_player.casa
     data:
-      media_content_id: http://192.168.17.36/d/gfchime/aviso-horadesalir.mp3
+      media_content_id: !secret aviso_horadesalir
       media_content_type: audio/mp3
