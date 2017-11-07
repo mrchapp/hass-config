@@ -29,6 +29,8 @@ recamara_principal:
     - light.liestudio
     - light.lisala
     - sensor.termostatoprincipalz_temperature
+    - sensor.cubydev_temperature_2
+    - sensor.cubydev_humidity_2
     - climate.termostatoprincipalz_cooling_1
     - sensor.movidos_temperature
     - sensor.template_windoor_balcon
@@ -44,6 +46,8 @@ recamara_principal_noview:
     - climate.termostatoprincipalz_cooling_1
     - sensor.termostatoprincipalz_temperature
     - sensor.movidos_temperature
+    - sensor.cubydev_temperature_2
+    - sensor.cubydev_humidity_2
     - sensor.template_windoor_balcon
     - binary_sensor.movidos_motion
     - automation.termostatocool_on
