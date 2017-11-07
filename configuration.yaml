@@ -1,7 +1,7 @@
 homeassistant:
   name: Home
-  latitude: !secret home_latitude
-  longitude: !secret home_longitude
+  latitude: !secret zone_home_lat
+  longitude: !secret zone_home_lon
   elevation: 596
   unit_system: metric
   time_zone: America/Monterrey
@@ -78,3 +78,25 @@ notify: !include_dir_merge_list notifications
 cuby:
   username: !secret cuby_username
   api_key: !secret cuby_api_key
+
+zone:
+  - name: Colinas
+    latitude: !secret zone_colinas_lat
+    longitude: !secret zone_colinas_lon
+    radius: 100
+    icon: mdi:home-outline
+  - name: Altavista
+    latitude: !secret zone_altavista_lat
+    longitude: !secret zone_altavista_lon
+    radius: 100
+    icon: mdi:home-outline
+  - name: CyA
+    latitude: !secret zone_cya_lat
+    longitude: !secret zone_cya_lon
+    radius: 200
+    icon: mdi:panda
+  - name: Formus
+    latitude: !secret zone_formus_lat
+    longitude: !secret zone_formus_lon
+    radius: 200
+    icon: mdi:panda
