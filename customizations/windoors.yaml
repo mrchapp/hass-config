@@ -13,6 +13,8 @@ binary_sensor.puertalavanderia_sensor:
   hidden: true
 
 # Puerta balcón
+sensor.puertabalcon_access_control:
+  hidden: true
 sensor.puertabalcon_alarm_level:
   hidden: true
 sensor.puertabalcon_alarm_type:
