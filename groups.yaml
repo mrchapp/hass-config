@@ -12,6 +12,8 @@ planta_baja:
     - fan.abanicosalaz_level
     - switch.sala_switch
     - switch.escaleras_switch
+    - sensor.alarmauno_status
+    - sensor.alarmauno_battery_level
     - sensor.template_windoor_patioizq
     - sensor.template_windoor_patioder
     - sensor.template_windoor_cocina
