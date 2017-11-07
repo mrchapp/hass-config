@@ -15,6 +15,8 @@ group.planta_baja_noview:
   friendly_name: Planta Baja
 group.recamara_derecha:
   friendly_name: Recámara Derecha
+group.recamara_derecha_noview:
+  friendly_name: Recámara Derecha
 group.recamara_principal:
   friendly_name: Recámara Principal
 group.recamara_principal_noview:

@@ -84,6 +84,17 @@ recamara_principal_noview:
     - input_select.termostato_recprincipal_modo
 
 recamara_derecha:
+  view: yes
+  entities:
+    - fan.abanicorecamarader_level
+    - light.focorecamarader_level
+    - light.lampararecder
+    - sensor.movitres_temperature
+    - sensor.cubydev_temperature_2
+    - sensor.cubydev_humidity_2
+    - sensor.template_motion_movitres
+
+recamara_derecha_noview:
   entities:
     - fan.abanicorecamarader_level
     - light.focorecamarader_level
