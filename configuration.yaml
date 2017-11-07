@@ -41,6 +41,11 @@ logbook:
       - zwave.ventanacocina
       - zwave.ventanaestancia
 
+logger:
+  default: info
+  logs:
+    homeassistant.components.mqtt: debug
+
 recorder:
   purge_interval: 1
   purge_keep_days: 14
@@ -106,3 +111,10 @@ zone:
     longitude: !secret zone_formus_lon
     radius: 200
     icon: mdi:panda
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !mqtt_port
+  client_id: home-assistant-paseo
+  username: !secret mqtt_username
+  password: !secret mqtt_password
