@@ -3,6 +3,8 @@ sensor.termostatoprincipalz_air_flow:
   hidden: true
 sensor.termostatoprincipalz_atmospheric_pressure:
   hidden: true
+sensor.termostatoprincipalz_barometric_pressure:
+  hidden: true
 sensor.termostatoprincipalz_co2_level:
   hidden: true
 sensor.termostatoprincipalz_current:
