@@ -79,6 +79,8 @@ cuby:
   username: !secret cuby_username
   api_key: !secret cuby_api_key
 
+wink:
+
 zone:
   - name: Colinas
     latitude: !secret zone_colinas_lat
