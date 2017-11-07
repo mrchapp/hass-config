@@ -66,6 +66,9 @@ bloomsky:
 media_player:
   - platform: cast
 
+device_tracker:
+  - platform: gpslogger
+
 group: !include groups.yaml
 automation: !include_dir_merge_list automations
 script: !include scripts.yaml
