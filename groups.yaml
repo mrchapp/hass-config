@@ -20,6 +20,27 @@ planta_baja:
     - sensor.template_windoor_lavanderia
     - media_player.abajo
 
+planta_baja_noview:
+  view: no
+  entities:
+    - fan.abanicosalaz_level
+    - light.cocina_level
+    - light.licocina
+    - light.comedor_level
+    - light.salaspot
+    - light.recibidor_level
+    - light.cochera_level
+    - light.patio_level
+    - light.pasillo
+    - switch.sala_switch
+    - switch.escaleras_switch
+    - sensor.alarmauno_status
+    - sensor.alarmauno_battery_level
+    - sensor.template_windoor_patioizq
+    - sensor.template_windoor_patioder
+    - sensor.template_windoor_cocina
+    - sensor.template_windoor_lavanderia
+
 recamara_principal:
   view: yes
   entities:

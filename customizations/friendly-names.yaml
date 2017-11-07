@@ -11,6 +11,8 @@ group.cocinasalacomedor:
   friendly_name: Cocina/Sala/Comedor
 group.planta_baja:
   friendly_name: Planta Baja
+group.planta_baja_noview:
+  friendly_name: Planta Baja
 group.recamara_derecha:
   friendly_name: Recámara Derecha
 group.recamara_principal:
