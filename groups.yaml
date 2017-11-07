@@ -33,8 +33,11 @@ recamara_principal:
     - sensor.termostatoprincipalz_temperature
     - climate.termostatoprincipalz_cooling_1
     - sensor.movidos_temperature
+    - sensor.sn1_temperature
+    - sensor.sn1_humidity
     - sensor.template_windoor_balcon
     - binary_sensor.movidos_motion
+    - sensor.sn1_pir
     - media_player.atomo
     - input_select.termostato_recprincipal_modo
 
@@ -47,8 +50,11 @@ recamara_principal_noview:
     - climate.termostatoprincipalz_cooling_1
     - sensor.termostatoprincipalz_temperature
     - sensor.movidos_temperature
+    - sensor.sn1_temperature
+    - sensor.sn1_humidity
     - sensor.template_windoor_balcon
     - binary_sensor.movidos_motion
+    - sensor.sn1_pir
     - automation.termostatocool_on
     - automation.termostatocool_off
     - automation.termostatoheat_on
