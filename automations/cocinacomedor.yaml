@@ -1,0 +1,72 @@
+- alias: 'Cocina UP'
+  trigger:
+    platform: time
+    at: '6:10'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.cocina_level
+    data:
+      brightness: 96
+
+- alias: 'Cocina ON'
+  trigger:
+    platform: time
+    at: '6:25'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.cocina_level
+    data:
+      brightness: 240
+
+- alias: 'Comedor ON'
+  trigger:
+    platform: time
+    at: '6:25'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.comedor_level
+    data:
+      brightness: 252
+
+- alias: 'Cocina DOWN'
+  trigger:
+    platform: time
+    at: '22:25'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.cocina_level
+    data:
+      brightness: 96
+
+- alias: 'Comedor DOWN'
+  trigger:
+    platform: time
+    at: '22:25'
+  action:
+    service: light.turn_on
+    entity_id:
+      - light.comedor_level
+    data:
+      brightness: 64
+
+- alias: 'Cocina OFF'
+  trigger:
+    platform: time
+    at: '22:30'
+  action:
+    service: light.turn_off
+    entity_id:
+      - light.cocina_level
+
+- alias: 'Comedor OFF'
+  trigger:
+    platform: time
+    at: '22:30'
+  action:
+    service: light.turn_off
+    entity_id:
+      - light.comedor_level
