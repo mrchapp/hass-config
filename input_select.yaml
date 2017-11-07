@@ -1,0 +1,7 @@
+termostato_recprincipal_modo:
+  name: A/C Operation
+  options:
+    - 'Off'
+    - Cool
+    - Heat
+  initial: 'Off'

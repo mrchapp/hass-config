@@ -90,6 +90,8 @@ cuby:
 
 wink:
 
+input_select: !include input_select.yaml
+
 zone:
   - name: Colinas
     latitude: !secret zone_colinas_lat
