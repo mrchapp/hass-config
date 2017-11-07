@@ -41,6 +41,10 @@ logbook:
       - zwave.ventanacocina
       - zwave.ventanaestancia
 
+recorder:
+  purge_interval: 1
+  purge_keep_days: 14
+
 sun:
 
 binary_sensor:
