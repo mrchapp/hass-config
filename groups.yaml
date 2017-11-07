@@ -36,6 +36,7 @@ recamara_principal:
     - sensor.template_windoor_balcon
     - binary_sensor.movidos_motion
     - media_player.atomo
+    - input_select.termostato_recprincipal_modo
 
 recamara_principal_noview:
   view: no
@@ -55,6 +56,7 @@ recamara_principal_noview:
     - automation.termostatoheat_on
     - automation.termostatoheat_off
     - media_player.atomo
+    - input_select.termostato_recprincipal_modo
 
 recamara_derecha:
   entities:
