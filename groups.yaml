@@ -1,17 +1,17 @@
 planta_baja:
   view: yes
   entities:
-    - light.cocina
+    - light.cocina_level
     - light.licocina
-    - light.comedor
+    - light.comedor_level
     - light.salaspot
-    - light.recibidor
+    - light.recibidor_level
     - light.cochera_level
-    - light.patiod
+    - light.patio_level
     - light.pasillo
     - fan.abanicosalaz_level
-    - switch.sala
-    - switch.escaleras
+    - switch.sala_switch
+    - switch.escaleras_switch
     - sensor.template_windoor_patioizq
     - sensor.template_windoor_patioder
     - sensor.template_windoor_cocina
@@ -67,16 +67,16 @@ recamara_derecha:
 cocinasalacomedor:
   entities:
     - fan.abanicosalaz_level
-    - light.cocina
-    - light.comedor
+    - light.cocina_level
+    - light.comedor_level
     - light.licocina
-    - switch.sala
+    - switch.sala_switch
     - light.salaspot
     - sensor.template_windoor_cocina
     - sensor.template_windoor_patioizq
     - sensor.template_windoor_patioder
     - sensor.moviuno_temperature
-    - binary_sensor.moviuno_motion
+    - sensor.template_motion_moviuno
     - media_player.abajo
 
 clima:

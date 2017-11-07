@@ -12,3 +12,17 @@
             Clear
           {%- endif %}
         friendly_name: 'Movimiento Tres'
+- platform: template
+  sensors:
+    template_motion_moviuno:
+        value_template: >-
+          {%- if is_state("sensor.moviuno_alarm_level", "255") -%}
+            {%- if is_state("sensor.moviuno_burglar", "3") -%}
+              Tampered
+            {%- else -%}
+              Triggered
+            {%- endif %}
+          {%- else -%}
+            Clear
+          {%- endif %}
+        friendly_name: 'Movimiento Uno'

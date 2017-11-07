@@ -14,7 +14,19 @@
       entity_id: light.cochera_level
   - service: zwave.refresh_entity
     data:
+      entity_id: light.cocina_level
+  - service: zwave.refresh_entity
+    data:
+      entity_id: light.comedor_level
+  - service: zwave.refresh_entity
+    data:
       entity_id: light.focorecamarader_level
+  - service: zwave.refresh_entity
+    data:
+      entity_id: light.patio_level
+  - service: zwave.refresh_entity
+    data:
+      entity_id: light.recibidor_level
   - service: zwave.refresh_entity
     data:
       entity_id: fan.abanicorecamarader_level
@@ -27,6 +39,9 @@
   - service: zwave.refresh_entity
     data:
       entity_id: switch.escaleras_switch
+  - service: zwave.refresh_entity
+    data:
+      entity_id: switch.sala_switch
   - service: zwave.refresh_entity
     data:
       entity_id: switch.sala

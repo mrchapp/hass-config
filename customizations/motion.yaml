@@ -1,5 +1,17 @@
 ## Motion sensors
 
+# MoviUno
+sensor.moviuno_alarm_level:
+  hidden: true
+sensor.moviuno_alarm_type:
+  hidden: true
+sensor.moviuno_burglar:
+  hidden: true
+sensor.moviuno_sourcenodeid:
+  hidden: true
+binary_sensor.moviuno_sensor:
+  hidden: true
+
 # MoviTres
 sensor.movitres_alarm_level:
   hidden: true
