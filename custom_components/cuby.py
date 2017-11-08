@@ -73,7 +73,6 @@ class Cuby(object):
     def refresh_devices(self):
         """Use the API to retrieve a list of devices."""
         API_URL = self.API_URL_BASE + "data?username=" + self._user_id + "&token=" + self._api_key
-        _LOGGER.critical("Fetching Cuby update from URL " + API_URL)
         response = requests.get(
             API_URL, headers={"Authorization": self._api_key}, timeout=10)
         if response.status_code == 401:
